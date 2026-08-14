@@ -1,693 +1,231 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
     <title>Teacher Application</title>
-
 </head>
 
 <body style="background-color: #f4f7f6; color: #263238;">
 
-    <h1 style="color: #355c5c; text-align: center;">
-        Application For Teacher Position
-    </h1>
+    <h1 style="color: #355c5c; text-align: center;">Application For Teacher Position</h1>
 
-    <p style="text-align: center; color: #607d7d;">
-        <b>Please fill in your personal data</b>
-    </p>
+    <p style="text-align: center; color: #607d7d;"><b>Please fill in your personal data</b></p>
 
     <br>
 
-
     <form>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Personal Information</b></legend>
 
-        <!-- Personal Information -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Personal Information</b>
-            </legend>
-
-
-            <label for="full-name">
-                Full Name
-            </label>
-
+            <label for="full-name">Full Name</label>
             <br>
-
-            <input
-                id="full-name"
-                type="text"
-                name="full-name"
-                placeholder="Enter your full name"
-                required
-            >
-
+            <input id="full-name" type="text" name="full-name" placeholder="Enter your full name" required>
 
             <br><br>
 
-
-            <label for="email">
-                Email
-            </label>
-
+            <label for="email">Email</label>
             <br>
-
-            <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="example@mail.com"
-                required
-            >
-
+            <input id="email" type="email" name="email" placeholder="example@mail.com" required>
 
             <br><br>
 
-
-            <label for="age">
-                Age
-            </label>
-
+            <label for="age">Age</label>
             <br>
-
-            <input
-                id="age"
-                type="number"
-                name="age"
-                placeholder="e.g. 28"
-                min="18"
-                max="40"
-                required
-            >
-
+            <input id="age" type="number" name="age" placeholder="e.g. 28" min="18" max="40" required>
 
             <br><br>
 
-
-            <label for="number">
-                Mobile Number
-            </label>
-
+            <label for="number">Mobile Number</label>
             <br>
-
-            <input
-                id="number"
-                type="tel"
-                name="number"
-                placeholder="01xxxxxxxxx"
-                minlength="11"
-                maxlength="11"
-                required
-            >
-
+            <input id="number" type="tel" name="number" placeholder="01xxxxxxxxx" minlength="11" maxlength="11" required>
 
             <br><br>
 
-
-            <label for="date-of-birth">
-                Date of Birth
-            </label>
-
+            <label for="date-of-birth">Date of Birth</label>
             <br>
-
-            <input
-                id="date-of-birth"
-                type="date"
-                name="date-of-birth"
-                required
-            >
-
+            <input id="date-of-birth" type="date" name="date-of-birth" required>
 
             <br><br>
 
+            <p><b>Gender:</b></p>
 
-            <p>
-                <b>Gender:</b>
-            </p>
+            <input id="male" type="radio" name="gender" value="male" required>
+            <label for="male">Male</label>
 
-
-            <input
-                id="male"
-                type="radio"
-                name="gender"
-                value="male"
-                required
-            >
-
-            <label for="male">
-                Male
-            </label>
-
-
-            <input
-                id="female"
-                type="radio"
-                name="gender"
-                value="female"
-            >
-
-            <label for="female">
-                Female
-            </label>
-
+            <input id="female" type="radio" name="gender" value="female">
+            <label for="female">Female</label>
 
             <br><br>
 
-
-            <label for="personal-photo">
-                Upload Personal Photo
-            </label>
-
+            <label for="personal-photo">Upload Personal Photo</label>
             <br>
-
-            <input
-                id="personal-photo"
-                type="file"
-                name="personal-photo"
-                required
-            >
+            <input id="personal-photo" type="file" name="personal-photo" required>
 
         </fieldset>
 
-
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Qualification</b></legend>
 
-        <!-- Qualification -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Qualification</b>
-            </legend>
-
-
-            <label for="faculty">
-                Graduation / Faculty
-            </label>
-
+            <label for="faculty">Graduation / Faculty</label>
             <br>
-
-            <input
-                id="faculty"
-                type="text"
-                name="faculty"
-                placeholder="Faculty of Education"
-                required
-            >
-
+            <input id="faculty" type="text" name="faculty" placeholder="Faculty of Education" required>
 
             <br><br>
 
-
-            <label for="graduation-year">
-                Graduation Year
-            </label>
-
+            <label for="graduation-year">Graduation Year</label>
             <br>
-
-            <input
-                id="graduation-year"
-                type="number"
-                name="graduation-year"
-                min="2000"
-                max="2026"
-                placeholder="yyyy"
-                required
-            >
-
+            <input id="graduation-year" type="number" name="graduation-year" min="2000" max="2026" placeholder="yyyy" required>
 
             <br><br>
 
-
-            <label for="graduation-grade">
-                Graduation Grade
-            </label>
-
+            <label for="graduation-grade">Graduation Grade</label>
             <br>
 
-            <select
-                id="graduation-grade"
-                name="graduation-grade"
-                required
-            >
-
-                <option value="" selected disabled>
-                    Select your grade
-                </option>
-
-                <option value="excellent">
-                    Excellent
-                </option>
-
-                <option value="very-good">
-                    Very Good
-                </option>
-
-                <option value="good">
-                    Good
-                </option>
-
-                <option value="pass">
-                    Pass
-                </option>
-
+            <select id="graduation-grade" name="graduation-grade" required>
+                <option value="" selected disabled>Select your grade</option>
+                <option value="excellent">Excellent</option>
+                <option value="very-good">Very Good</option>
+                <option value="good">Good</option>
+                <option value="pass">Pass</option>
             </select>
 
+            <br><br>
+
+            <label for="experience">Years of Teaching Experience</label>
+            <br>
+            <input id="experience" type="number" name="experience" min="0" max="20" placeholder="e.g. 5" required>
 
             <br><br>
 
-
-            <label for="experience">
-                Years of Teaching Experience
-            </label>
-
+            <label for="cv">Upload CV (PDF)</label>
             <br>
-
-            <input
-                id="experience"
-                type="number"
-                name="experience"
-                min="0"
-                max="20"
-                placeholder="e.g. 5"
-                required
-            >
-
-
-            <br><br>
-
-
-            <label for="cv">
-                Upload CV (PDF)
-            </label>
-
-            <br>
-
-            <input
-                id="cv"
-                type="file"
-                name="cv"
-                accept=".pdf"
-                required
-            >
+            <input id="cv" type="file" name="cv" accept=".pdf" required>
 
         </fieldset>
 
-
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Subjects You Can Teach</b></legend>
 
-        <!-- Subjects -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Subjects You Can Teach</b>
-            </legend>
-
-
-            <label for="subjects">
-                Select the subjects you can teach
-            </label>
+            <label for="subjects">Select the subjects you can teach</label>
 
             <br><br>
 
-
-            <select
-                id="subjects"
-                name="subjects"
-                multiple
-                required
-            >
-
-                <option value="english">
-                    English
-                </option>
-
-                <option value="mathematics">
-                    Mathematics
-                </option>
-
-                <option value="science">
-                    Science
-                </option>
-
-                <option value="computer">
-                    Computer Science
-                </option>
-
-                <option value="history">
-                    History
-                </option>
-
+            <select id="subjects" name="subjects" multiple required>
+                <option value="english">English</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="computer">Computer Science</option>
+                <option value="history">History</option>
             </select>
 
         </fieldset>
 
-
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Preferred Study Days & Time</b></legend>
 
-        <!-- Preferred Days -->
+            <p><b>Select your preferred days:</b></p>
 
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Preferred Study Days & Time</b>
-            </legend>
-
-
-            <p>
-                <b>Select your preferred days:</b>
-            </p>
-
-
-            <input
-                id="saturday"
-                type="checkbox"
-                name="days"
-                value="saturday"
-            >
-
-            <label for="saturday">
-                Saturday
-            </label>
-
-
+            <input id="saturday" type="checkbox" name="days" value="saturday">
+            <label for="saturday">Saturday</label>
             <br>
 
-
-            <input
-                id="sunday"
-                type="checkbox"
-                name="days"
-                value="sunday"
-            >
-
-            <label for="sunday">
-                Sunday
-            </label>
-
-
+            <input id="sunday" type="checkbox" name="days" value="sunday">
+            <label for="sunday">Sunday</label>
             <br>
 
-
-            <input
-                id="monday"
-                type="checkbox"
-                name="days"
-                value="monday"
-            >
-
-            <label for="monday">
-                Monday
-            </label>
-
-
+            <input id="monday" type="checkbox" name="days" value="monday">
+            <label for="monday">Monday</label>
             <br>
 
-
-            <input
-                id="tuesday"
-                type="checkbox"
-                name="days"
-                value="tuesday"
-            >
-
-            <label for="tuesday">
-                Tuesday
-            </label>
-
-
+            <input id="tuesday" type="checkbox" name="days" value="tuesday">
+            <label for="tuesday">Tuesday</label>
             <br>
 
-
-            <input
-                id="wednesday"
-                type="checkbox"
-                name="days"
-                value="wednesday"
-            >
-
-            <label for="wednesday">
-                Wednesday
-            </label>
-
-
+            <input id="wednesday" type="checkbox" name="days" value="wednesday">
+            <label for="wednesday">Wednesday</label>
             <br>
 
-
-            <input
-                id="thursday"
-                type="checkbox"
-                name="days"
-                value="thursday"
-            >
-
-            <label for="thursday">
-                Thursday
-            </label>
-
-
+            <input id="thursday" type="checkbox" name="days" value="thursday">
+            <label for="thursday">Thursday</label>
             <br>
 
-
-            <input
-                id="friday"
-                type="checkbox"
-                name="days"
-                value="friday"
-            >
-
-            <label for="friday">
-                Friday
-            </label>
-
+            <input id="friday" type="checkbox" name="days" value="friday">
+            <label for="friday">Friday</label>
 
             <br><br>
 
-
-            <label for="start-time">
-                Preferred Start Time
-            </label>
-
+            <label for="start-time">Preferred Start Time</label>
             <br>
-
-            <input
-                id="start-time"
-                type="time"
-                name="start-time"
-                required
-            >
+            <input id="start-time" type="time" name="start-time" required>
 
         </fieldset>
 
-
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Why Do You Want To Join?</b></legend>
 
-        <!-- Why Join -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Why Do You Want To Join?</b>
-            </legend>
-
-
-            <textarea
-                id="reason"
-                name="reason"
-                rows="10"
-                cols="50"
-                maxlength="200"
-                placeholder="Tell us why you want to join..."
-                required
-            ></textarea>
+            <textarea id="reason" name="reason" rows="10" cols="50" maxlength="200" placeholder="Tell us why you want to join..." required></textarea>
 
         </fieldset>
 
-
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Preferred Branch</b></legend>
 
-        <!-- Preferred Branch -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Preferred Branch</b>
-            </legend>
-
-
-            <label for="branch">
-                Select your preferred branch
-            </label>
+            <label for="branch">Select your preferred branch</label>
 
             <br><br>
 
-
-            <select
-                id="branch"
-                name="branch"
-                required
-            >
-
-                <option value="" selected disabled>
-                    Select a branch
-                </option>
-
-                <option value="alexandria">
-                    Alexandria Branch
-                </option>
-
-                <option value="cairo">
-                    Cairo Branch
-                </option>
-
-                <option value="online">
-                    Online
-                </option>
-
+            <select id="branch" name="branch" required>
+                <option value="" selected disabled>Select a branch</option>
+                <option value="alexandria">Alexandria Branch</option>
+                <option value="cairo">Cairo Branch</option>
+                <option value="online">Online</option>
             </select>
 
         </fieldset>
 
-
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Additional Settings</b></legend>
 
-        <!-- Additional Settings -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Additional Settings</b>
-            </legend>
-
-
-            <label for="favorite-color">
-                Favorite Highlight Color
-            </label>
-
+            <label for="favorite-color">Favorite Highlight Color</label>
             <br>
-
-            <input
-                id="favorite-color"
-                type="color"
-                name="favorite-color"
-            >
-
+            <input id="favorite-color" type="color" name="favorite-color">
 
             <br><br>
 
-
-            <label for="join-date">
-                Preferred Join Date
-            </label>
-
+            <label for="join-date">Preferred Join Date</label>
             <br>
-
-            <input
-                id="join-date"
-                type="date"
-                name="join-date"
-                required
-            >
+            <input id="join-date" type="date" name="join-date" required>
 
         </fieldset>
-
 
         <br>
 
+        <fieldset style="background-color: #ffffff; border: 2px solid #b8cccc; padding: 20px;">
+            <legend style="color: #355c5c;"><b>Terms and Conditions</b></legend>
 
-        <!-- Terms -->
-
-        <fieldset style="
-            background-color: #ffffff;
-            border: 2px solid #b8cccc;
-            padding: 20px;
-        ">
-
-            <legend style="color: #355c5c;">
-                <b>Terms and Conditions</b>
-            </legend>
-
-
-            <input
-                id="terms"
-                type="checkbox"
-                name="terms"
-                required
-            >
-
-            <label for="terms">
-                I agree to the terms and conditions.
-            </label>
+            <input id="terms" type="checkbox" name="terms" required>
+            <label for="terms">I agree to the terms and conditions.</label>
 
         </fieldset>
-
 
         <br><br>
 
+        <input type="submit" value="Submit Registration" style="background-color: #355c5c; color: white; padding: 10px 20px; border: 0;">
 
-        <input
-            type="submit"
-            value="Submit Registration"
-            style="
-                background-color: #355c5c;
-                color: white;
-                padding: 10px 20px;
-                border: 0;
-            "
-        >
-
-
-        <input
-            type="reset"
-            value="Clear Form"
-            style="
-                background-color: #78909c;
-                color: white;
-                padding: 10px 20px;
-                border: 0;
-            "
-        >
-
+        <input type="reset" value="Clear Form" style="background-color: #78909c; color: white; padding: 10px 20px; border: 0;">
 
     </form>
 
